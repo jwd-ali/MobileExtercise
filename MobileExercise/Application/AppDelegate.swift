@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        ThemeManager.applyTheme(theme: ThemeManager.currentTheme())
         // Override point for customization after application launch.
         return true
     }
