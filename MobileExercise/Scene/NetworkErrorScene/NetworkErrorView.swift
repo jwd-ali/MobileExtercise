@@ -59,7 +59,9 @@ class NetworkErrorView: UIView {
     }
     
     public func startAnimating() {
-            self.animationView.showAnimation(aimationName: "4506-retry-and-user-busy-version-2")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: { [weak self] in
+            self?.animationView.showAnimation(aimationName: "4506-retry-and-user-busy-version-2")
+        })
     }
 }
 private extension NetworkErrorView {
