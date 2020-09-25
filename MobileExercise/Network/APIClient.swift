@@ -16,7 +16,7 @@ public class APIClient {
     private func fetchFeed(request : URLRequest?, completion:@escaping (Result<Data,AppError>) -> Void) {
         
         guard let url = request?.url else {
-            let error = AppError.init(error: "Not a valid Url")
+            let error = AppError(error: "Not a valid Url")
             completion(.failure(error))
             return
         }
@@ -34,6 +34,11 @@ public class APIClient {
 }
 extension APIClient:ApiService {
     public func performRequest<T:Codable>(router: URLRequestConvertible, completionHandler: @escaping (Result<T,AppError>) -> Void) {
+        
+        if !Reachability.isConnectedToNetwork() { completionHandler(.failure(AppError(error: "Network is Busy", isNetworkError: true)))
+            return
+        }
+        
         self.fetchFeed(request: router.urlRequest()) { result in
             switch result {
             case .success(let data):
@@ -47,5 +52,6 @@ extension APIClient:ApiService {
                 completionHandler(.failure(error))
             }
         }
+        
     }
 }

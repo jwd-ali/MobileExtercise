@@ -7,12 +7,13 @@
 //
 
 import Foundation
-protocol RepositoriesService {
+protocol RepositoriesServiceType {
     func fetchTrendingRespostries(for language:String, period:String, completion: @escaping(Result<TrendingRepositories?,AppError>) -> Void)
 }
 
-class RepositoriesServiceImp: RepositoriesService {
+class RepositoriesService: RepositoriesServiceType {
     private let apiConvertible:ApiService = APIClient()
+//    public init() {}
     
     func fetchTrendingRespostries(for language:String, period:String, completion: @escaping(Result<TrendingRepositories?,AppError>) -> Void) {
         

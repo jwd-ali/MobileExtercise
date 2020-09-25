@@ -41,3 +41,9 @@ struct BuiltBy: Codable {
 }
 
 typealias TrendingRepositories = [TrendingRepository]
+
+extension TrendingRepository {
+    static var mocked: [TrendingRepository] {
+        return [TrendingRepository(author: "Jawad", name: "JTabBar", avatar: "https://avatars2.githubusercontent.com/u/53082328?s=460&u=d23c2dcc46397e42b3e3eb41b6e7089e8b18e64e&v=4", url: "https://github.com/jwd-ali/Switch-Animations", trendingRepositoryDescription: "", language: "swift", languageColor: "#00ADD8", stars: 67, forks: 8, currentPeriodStars: 7, builtBy: [BuiltBy(username: "jawad", href: "", avatar: "")]),TrendingRepository(author: "Janbaz", name: "ATabBar", avatar: "https://avatars2.githubusercontent.com/u/53082328?s=460&u=d23c2dcc46397e42b3e3eb41b6e7089e8b18e64e&v=4", url: "https://github.com/jwd-ali/Switch-Animations", trendingRepositoryDescription: "", language: "swift", languageColor: "#ffac45", stars: 167, forks: 8, currentPeriodStars: 17, builtBy: [BuiltBy(username: "usman", href: "", avatar: "")])]
+    }
+}

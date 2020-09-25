@@ -9,6 +9,8 @@
 import UIKit
 class NetworkErrorView: UIView {
     
+    //MARK:- Views
+    
     private lazy var animationView: UIView = {
        let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -30,11 +32,14 @@ class NetworkErrorView: UIView {
     
     private lazy var titleLabel = UILabelFactory.createUILabel(with: UIColor.universalColor3, font: UIFont.boldSystemFont(ofSize: FontSize.large.rawValue), alignment: .center, text: "Something went wrong..")
     
-    private lazy var descriptionLabel = UILabelFactory.createUILabel(with: UIColor.universalColor4, font: UIFont.systemFont(ofSize: FontSize.medium.rawValue), alignment: .center, text: "An alien probably blocking your signal.")
+    private lazy var descriptionLabel = UILabelFactory.createUILabel(with: UIColor.universalColor5, font: UIFont.systemFont(ofSize: FontSize.medium.rawValue), alignment: .center, text: "An alien probably blocking your signal.")
     
     private lazy var stack = UIStackViewFactory.createStackView(with: .vertical, alignment: .fill, distribution: .fill, spacing: 5, arrangedSubviews: [animationView,titleLabel,descriptionLabel])
     
+    //MARK:- Properties
+    var retryClosure: (()->())?
     
+    //MARK:- Initializers
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -47,14 +52,14 @@ class NetworkErrorView: UIView {
     }
     
     private func commonInit() {
-        
+        backgroundColor = .universalColor1
         setupView()
         setupConstraints()
        
     }
     
     public func startAnimating() {
-        animationView.showAnimation(aimationName: "4506-retry-and-user-busy-version-2")
+            self.animationView.showAnimation(aimationName: "4506-retry-and-user-busy-version-2")
     }
 }
 private extension NetworkErrorView {
@@ -62,30 +67,32 @@ private extension NetworkErrorView {
         addSubview(stack)
         addSubview(retryButton)
         
-       
+        retryButton.addTarget(self, action: #selector(retryData), for: .touchUpInside)
     }
+    
     func setupConstraints(){
         
         retryButton
             .alignEdgesWithSuperview([.left, .right], constant: 20)
-            .alignEdgeWithSuperviewSafeArea(.bottom, constant:20)
+            .alignEdgeWithSuperviewSafeArea(.bottom, constant:50)
             .height(constant: 50)
         
         stack
-            .toTopOf(retryButton, .greaterThanOrEqualTo, constant:20)
+            .toTopOf(retryButton,.greaterThanOrEqualTo,constant:20)
             .alignEdgeWithSuperviewSafeArea(.top, .greaterThanOrEqualTo , constant: 40)
             .alignEdgesWithSuperview([.left, .right], constant: 30)
-        
+            .centerVerticallyInSuperview(priority: .defaultLow)
         
         stack
             .setCustomSpacing(30, after: animationView)
         
         animationView
             .height(with: .height, ofView: self, multiplier: 0.4)
-            
-        
-        
+
     }
     
+    @objc func retryData() {
+        retryClosure?()
+    }
    
 }

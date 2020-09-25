@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E37E404F251BC9C4009B72FC /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E404E251BC9C4009B72FC /* LottieAnimation.swift */; };
+		E37E406C251C700D009B72FC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = E37E406B251C700D009B72FC /* SkeletonView */; };
+		E37E406F251C71E2009B72FC /* TrendingRespostriesTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E406E251C71E2009B72FC /* TrendingRespostriesTableCellView.swift */; };
+		E37E4071251C71EF009B72FC /* TrendingRespostriesTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E4070251C71EF009B72FC /* TrendingRespostriesTableCellViewModel.swift */; };
+		E37E4073251C79E0009B72FC /* DequeueInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E4072251C79E0009B72FC /* DequeueInitializable.swift */; };
+		E37E4076251C9B16009B72FC /* TrendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E4075251C9B16009B72FC /* TrendRepository.swift */; };
+		E37E4078251D9D27009B72FC /* SkeletonTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E4077251D9D27009B72FC /* SkeletonTableView.swift */; };
+		E37E407C251DB8FA009B72FC /* TrendingRespostriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E407B251DB8FA009B72FC /* TrendingRespostriesViewModelTests.swift */; };
+		E37E407F251DDA30009B72FC /* TrendingRespostriesTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E407E251DDA30009B72FC /* TrendingRespostriesTableCellViewModelTests.swift */; };
 		E3E84666251A8266007B66E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E84665251A8266007B66E7 /* AppDelegate.swift */; };
 		E3E84668251A8266007B66E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E84667251A8266007B66E7 /* SceneDelegate.swift */; };
 		E3E8466A251A8266007B66E7 /* TrendingRespostriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E84669251A8266007B66E7 /* TrendingRespostriesViewController.swift */; };
@@ -57,6 +65,13 @@
 
 /* Begin PBXFileReference section */
 		E37E404E251BC9C4009B72FC /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
+		E37E406E251C71E2009B72FC /* TrendingRespostriesTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRespostriesTableCellView.swift; sourceTree = "<group>"; };
+		E37E4070251C71EF009B72FC /* TrendingRespostriesTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRespostriesTableCellViewModel.swift; sourceTree = "<group>"; };
+		E37E4072251C79E0009B72FC /* DequeueInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueInitializable.swift; sourceTree = "<group>"; };
+		E37E4075251C9B16009B72FC /* TrendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendRepository.swift; sourceTree = "<group>"; };
+		E37E4077251D9D27009B72FC /* SkeletonTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonTableView.swift; sourceTree = "<group>"; };
+		E37E407B251DB8FA009B72FC /* TrendingRespostriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRespostriesViewModelTests.swift; sourceTree = "<group>"; };
+		E37E407E251DDA30009B72FC /* TrendingRespostriesTableCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRespostriesTableCellViewModelTests.swift; sourceTree = "<group>"; };
 		E3E84662251A8266007B66E7 /* MobileExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E84665251A8266007B66E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E84667251A8266007B66E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E84697251A8590007B66E7 /* Kingfisher in Frameworks */,
+				E37E406C251C700D009B72FC /* SkeletonView in Frameworks */,
 				E3E8469A251A87C3007B66E7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +134,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E37E406D251C71A9009B72FC /* TrendingRespostriesCell */ = {
+			isa = PBXGroup;
+			children = (
+				E37E406E251C71E2009B72FC /* TrendingRespostriesTableCellView.swift */,
+				E37E4070251C71EF009B72FC /* TrendingRespostriesTableCellViewModel.swift */,
+			);
+			path = TrendingRespostriesCell;
+			sourceTree = "<group>";
+		};
+		E37E4074251C9AEE009B72FC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E37E4075251C9B16009B72FC /* TrendRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E37E4079251DB8A0009B72FC /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E37E407A251DB8C6009B72FC /* TrendingRespostriesScene */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		E37E407A251DB8C6009B72FC /* TrendingRespostriesScene */ = {
+			isa = PBXGroup;
+			children = (
+				E37E407B251DB8FA009B72FC /* TrendingRespostriesViewModelTests.swift */,
+				E37E407D251DDA15009B72FC /* TrendingRespostriesCell */,
+			);
+			path = TrendingRespostriesScene;
+			sourceTree = "<group>";
+		};
+		E37E407D251DDA15009B72FC /* TrendingRespostriesCell */ = {
+			isa = PBXGroup;
+			children = (
+				E37E407E251DDA30009B72FC /* TrendingRespostriesTableCellViewModelTests.swift */,
+			);
+			path = TrendingRespostriesCell;
+			sourceTree = "<group>";
+		};
 		E3E84659251A8266007B66E7 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +199,7 @@
 		E3E84664251A8266007B66E7 /* MobileExercise */ = {
 			isa = PBXGroup;
 			children = (
+				E37E4074251C9AEE009B72FC /* Repositories */,
 				E3E846E6251BB5F8007B66E7 /* Abstract */,
 				E3E8469B251B0EFE007B66E7 /* Application */,
 				E3E846E2251B72EF007B66E7 /* Scene */,
@@ -160,6 +219,7 @@
 		E3E8467B251A8268007B66E7 /* MobileExerciseTests */ = {
 			isa = PBXGroup;
 			children = (
+				E37E4079251DB8A0009B72FC /* Scene */,
 				E3E8467C251A8268007B66E7 /* MobileExerciseTests.swift */,
 				E3E8467E251A8268007B66E7 /* Info.plist */,
 			);
@@ -224,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				E3E846C3251B4FEA007B66E7 /* ThemeManager.swift */,
+				E37E4072251C79E0009B72FC /* DequeueInitializable.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -285,19 +346,20 @@
 		E3E846E2251B72EF007B66E7 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				E3E846E9251BB8D8007B66E7 /* NetworkError */,
-				E3E846E3251B72F9007B66E7 /* TrendingRespostries */,
+				E3E846E9251BB8D8007B66E7 /* NetworkErrorScene */,
+				E3E846E3251B72F9007B66E7 /* TrendingRespostriesScene */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
 		};
-		E3E846E3251B72F9007B66E7 /* TrendingRespostries */ = {
+		E3E846E3251B72F9007B66E7 /* TrendingRespostriesScene */ = {
 			isa = PBXGroup;
 			children = (
 				E3E84669251A8266007B66E7 /* TrendingRespostriesViewController.swift */,
 				E3E846E4251B7337007B66E7 /* TrendingRespostriesViewModel.swift */,
+				E37E406D251C71A9009B72FC /* TrendingRespostriesCell */,
 			);
-			path = TrendingRespostries;
+			path = TrendingRespostriesScene;
 			sourceTree = "<group>";
 		};
 		E3E846E6251BB5F8007B66E7 /* Abstract */ = {
@@ -305,16 +367,17 @@
 			children = (
 				E3E846E7251BB632007B66E7 /* AppAsyncImage.swift */,
 				E37E404E251BC9C4009B72FC /* LottieAnimation.swift */,
+				E37E4077251D9D27009B72FC /* SkeletonTableView.swift */,
 			);
 			path = Abstract;
 			sourceTree = "<group>";
 		};
-		E3E846E9251BB8D8007B66E7 /* NetworkError */ = {
+		E3E846E9251BB8D8007B66E7 /* NetworkErrorScene */ = {
 			isa = PBXGroup;
 			children = (
 				E3E846EA251BB919007B66E7 /* NetworkErrorView.swift */,
 			);
-			path = NetworkError;
+			path = NetworkErrorScene;
 			sourceTree = "<group>";
 		};
 		E3E846EC251BB93F007B66E7 /* Animations */ = {
@@ -344,6 +407,7 @@
 			packageProductDependencies = (
 				E3E84696251A8590007B66E7 /* Kingfisher */,
 				E3E84699251A87C3007B66E7 /* Lottie */,
+				E37E406B251C700D009B72FC /* SkeletonView */,
 			);
 			productName = MobileExercise;
 			productReference = E3E84662251A8266007B66E7 /* MobileExercise.app */;
@@ -420,6 +484,7 @@
 			packageReferences = (
 				E3E84695251A8590007B66E7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				E3E84698251A87C3007B66E7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				E37E406A251C700D009B72FC /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = E3E84663251A8266007B66E7 /* Products */;
 			projectDirPath = "";
@@ -465,6 +530,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37E4071251C71EF009B72FC /* TrendingRespostriesTableCellViewModel.swift in Sources */,
+				E37E406F251C71E2009B72FC /* TrendingRespostriesTableCellView.swift in Sources */,
 				E3E846C8251B52B6007B66E7 /* Router.swift in Sources */,
 				E3E846CB251B543A007B66E7 /* RepositoriesService.swift in Sources */,
 				E3E846D5251B5DC5007B66E7 /* Reachability.swift in Sources */,
@@ -475,12 +542,15 @@
 				E3E846AF251B1A2A007B66E7 /* AppError.swift in Sources */,
 				E3E846E1251B6FBF007B66E7 /* UIStackViewFactory.swift in Sources */,
 				E3E846DF251B6FAF007B66E7 /* UIImageViewFactory.swift in Sources */,
+				E37E4073251C79E0009B72FC /* DequeueInitializable.swift in Sources */,
+				E37E4076251C9B16009B72FC /* TrendRepository.swift in Sources */,
 				E3E8466A251A8266007B66E7 /* TrendingRespostriesViewController.swift in Sources */,
 				E3E846DD251B6F93007B66E7 /* UILabelFactory.swift in Sources */,
 				E3E846DA251B6F25007B66E7 /* LayoutAttributes.swift in Sources */,
 				E3E846C1251B1D02007B66E7 /* UIColor+Extension.swift in Sources */,
 				E3E846E5251B7337007B66E7 /* TrendingRespostriesViewModel.swift in Sources */,
 				E3E84666251A8266007B66E7 /* AppDelegate.swift in Sources */,
+				E37E4078251D9D27009B72FC /* SkeletonTableView.swift in Sources */,
 				E3E846E8251BB632007B66E7 /* AppAsyncImage.swift in Sources */,
 				E3E846EB251BB919007B66E7 /* NetworkErrorView.swift in Sources */,
 				E3E84668251A8266007B66E7 /* SceneDelegate.swift in Sources */,
@@ -493,7 +563,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37E407F251DDA30009B72FC /* TrendingRespostriesTableCellViewModelTests.swift in Sources */,
 				E3E8467D251A8268007B66E7 /* MobileExerciseTests.swift in Sources */,
+				E37E407C251DB8FA009B72FC /* TrendingRespostriesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +880,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E37E406A251C700D009B72FC /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
 		E3E84695251A8590007B66E7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -827,6 +907,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E37E406B251C700D009B72FC /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E37E406A251C700D009B72FC /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
 		E3E84696251A8590007B66E7 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E3E84695251A8590007B66E7 /* XCRemoteSwiftPackageReference "Kingfisher" */;

@@ -13,7 +13,7 @@ enum FontSize: CGFloat {
     case extraLarge = 20
     case large = 15
     case medium = 14
-    case small = 11
+    case small = 13
 }
 enum Theme: Int {
     case theme1
