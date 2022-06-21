@@ -1,0 +1,40 @@
+name: Build & Test
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-11]
+        xcode: ['13.1']
+    runs-on: ${{ matrix.os }}
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_${{ matrix.xcode }}.app/Contents/Developer
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+    - name: Install XCPretty
+      run: gem install xcpretty
+    - uses: webfactory/ssh-agent@v0.4.1
+      with:
+        ssh-private-key: ${{ secrets.SSH_GITHUB_ACTIONS }}
+    - uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Check spm cache for dependencies
+      uses: actions/cache@v2
+      with:
+        path: .build
+        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        restore-keys: |
+          ${{ runner.os }}-spm-
+    - name: Remove xcodeproj
+      run: rm -rf SadaPay.xcodeproj
+    - name: Remove previous build in .DerivedData
+      run: rm -rf .DerivedData
+    - name: Build and test
+      run: bundle exec fastlane test
