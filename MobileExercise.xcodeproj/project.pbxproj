@@ -13,7 +13,6 @@
 		E36CD5852860A537006BE781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E36CD5542860A537006BE781 /* LaunchScreen.storyboard */; };
 		E36CD5862860A537006BE781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36CD5572860A537006BE781 /* Assets.xcassets */; };
 		E36CD5872860A537006BE781 /* Theme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36CD5582860A537006BE781 /* Theme.xcassets */; };
-		E36CD5882860A537006BE781 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E36CD5592860A537006BE781 /* Info.plist */; };
 		E36CD5892860A537006BE781 /* 4506-retry-and-user-busy-version-2.json in Resources */ = {isa = PBXBuildFile; fileRef = E36CD55B2860A537006BE781 /* 4506-retry-and-user-busy-version-2.json */; };
 		E36CD58A2860A537006BE781 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD55D2860A537006BE781 /* APIClient.swift */; };
 		E36CD58B2860A537006BE781 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD55E2860A537006BE781 /* Reachability.swift */; };
@@ -41,7 +40,6 @@
 		E36CD5A92860A551006BE781 /* MobileExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD5A22860A551006BE781 /* MobileExerciseTests.swift */; };
 		E36CD5AA2860A551006BE781 /* TrendingRespostriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD5A52860A551006BE781 /* TrendingRespostriesViewModelTests.swift */; };
 		E36CD5AB2860A551006BE781 /* TrendingRespostriesTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD5A72860A551006BE781 /* TrendingRespostriesTableCellViewModelTests.swift */; };
-		E36CD5AC2860A551006BE781 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E36CD5A82860A551006BE781 /* Info.plist */; };
 		E37E406C251C700D009B72FC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = E37E406B251C700D009B72FC /* SkeletonView */; };
 		E3E84688251A8268007B66E7 /* MobileExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E84687251A8268007B66E7 /* MobileExerciseUITests.swift */; };
 		E3E84697251A8590007B66E7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E3E84696251A8590007B66E7 /* Kingfisher */; };
@@ -520,9 +518,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E36CD5882860A537006BE781 /* Info.plist in Resources */,
 				E36CD5892860A537006BE781 /* 4506-retry-and-user-busy-version-2.json in Resources */,
-				E36CD5AC2860A551006BE781 /* Info.plist in Resources */,
 				E36CD5872860A537006BE781 /* Theme.xcassets in Resources */,
 				E36CD5862860A537006BE781 /* Assets.xcassets in Resources */,
 				E36CD5852860A537006BE781 /* LaunchScreen.storyboard in Resources */,
@@ -744,7 +740,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VBQS7JDYT;
-				INFOPLIST_FILE = MobileExercise/Resources/Info.plist;
+				INFOPLIST_FILE = Sources/SadaPay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -762,7 +758,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VBQS7JDYT;
-				INFOPLIST_FILE = MobileExercise/Resources/Info.plist;
+				INFOPLIST_FILE = Sources/SadaPay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -781,7 +777,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VBQS7JDYT;
-				INFOPLIST_FILE = MobileExerciseTests/Info.plist;
+				INFOPLIST_FILE = Tests/SadaPayTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -803,7 +799,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VBQS7JDYT;
-				INFOPLIST_FILE = MobileExerciseTests/Info.plist;
+				INFOPLIST_FILE = Tests/SadaPayTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
