@@ -37,12 +37,12 @@
 		E36CD59E2860A537006BE781 /* TrendingRespostriesTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD57F2860A537006BE781 /* TrendingRespostriesTableCellViewModel.swift */; };
 		E36CD59F2860A537006BE781 /* TrendingRespostriesTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD5802860A537006BE781 /* TrendingRespostriesTableCellView.swift */; };
 		E36CD5A02860A537006BE781 /* TrendingRespostriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD5812860A537006BE781 /* TrendingRespostriesViewModel.swift */; };
-		E36CD5AA2860A551006BE781 /* TrendingRespostriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD5A52860A551006BE781 /* TrendingRespostriesViewModelTests.swift */; };
-		E36CD5AB2860A551006BE781 /* TrendingRespostriesTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD5A72860A551006BE781 /* TrendingRespostriesTableCellViewModelTests.swift */; };
 		E37E406C251C700D009B72FC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = E37E406B251C700D009B72FC /* SkeletonView */; };
 		E3E84688251A8268007B66E7 /* MobileExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E84687251A8268007B66E7 /* MobileExerciseUITests.swift */; };
 		E3E84697251A8590007B66E7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E3E84696251A8590007B66E7 /* Kingfisher */; };
 		E3E8469A251A87C3007B66E7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E3E84699251A87C3007B66E7 /* Lottie */; };
+		E3EE7566286356BE0061EA2E /* TrendingRespostriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD5A52860A551006BE781 /* TrendingRespostriesViewModelTests.swift */; };
+		E3EE7567286356C30061EA2E /* TrendingRespostriesTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CD5A72860A551006BE781 /* TrendingRespostriesTableCellViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -546,7 +546,6 @@
 				E36CD59E2860A537006BE781 /* TrendingRespostriesTableCellViewModel.swift in Sources */,
 				E36CD59C2860A537006BE781 /* NetworkErrorView.swift in Sources */,
 				E36CD5822860A537006BE781 /* AppAsyncImage.swift in Sources */,
-				E36CD5AB2860A551006BE781 /* TrendingRespostriesTableCellViewModelTests.swift in Sources */,
 				E36CD58D2860A537006BE781 /* TrendRepository.swift in Sources */,
 				E36CD5842860A537006BE781 /* SkeletonTableView.swift in Sources */,
 				E36CD5832860A537006BE781 /* LottieAnimation.swift in Sources */,
@@ -570,7 +569,6 @@
 				E36CD5912860A537006BE781 /* LayoutAttributes.swift in Sources */,
 				E36CD59D2860A537006BE781 /* TrendingRespostriesViewController.swift in Sources */,
 				E36CD5952860A537006BE781 /* UIStackViewFactory.swift in Sources */,
-				E36CD5AA2860A551006BE781 /* TrendingRespostriesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +576,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3EE7567286356C30061EA2E /* TrendingRespostriesTableCellViewModelTests.swift in Sources */,
+				E3EE7566286356BE0061EA2E /* TrendingRespostriesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
